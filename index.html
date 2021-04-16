@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory game</title>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- start game button -->
+    <!--<div class="start_btn"><button>Start Game</button></div>-->
+
+    <!-- info box -->
+    <!--<div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of this Game</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will have only <span>15 seconds</span>for the game</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Game</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>-->
+
+    <!-- game box -->
+    <!--<div class="game_box">
+        <header>
+            <div class="title">Whot Card Game</div>
+            <div class="timer">
+                <div class="time_text">Time Left</div>
+                <div class="timer_sec">15</div>
+            </div>-->
+
+            <!-- result box -->
+    <!--<div class="result_box">
+        <div class="icon">
+            <i class="fa fa-crown"></i>
+        </div>
+        <div class="complete_text">You've completed the Game!</div>
+        <div class="buttons"></div>
+        <button class="restart">Replay Game</button>
+        <button class="quit">Quit Game</button>
+    </div>-->
+
+    <div id="timer"></div>
+    <section class="memory-game">
+        <div class="memory-card" data-framework="block 14">
+            <img class="front-face" src="img/block 14.JPG" alt="Block 14">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="block 14">
+            <img class="front-face" src="img/block 14.JPG" alt="Block 14">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="circle 1">
+            <img class="front-face" src="img/circle 1.JPG" alt="Circle 1">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="circle 1">
+            <img class="front-face" src="img/circle 1.JPG" alt="Circle 1">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="circle 8">
+            <img class="front-face" src="img/circle 8.jpg" alt="Circle 8">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="circle 8">
+            <img class="front-face" src="img/circle 8.jpg" alt="Circle 8">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="cross 5">
+            <img class="front-face" src="img/cross 5.JPG" alt="Cross 5">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="cross 5">
+            <img class="front-face" src="img/cross 5.JPG" alt="Cross 5">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="star 2">
+            <img class="front-face" src="img/star 2.JPG" alt="Star 2">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="star 2">
+            <img class="front-face" src="img/star 2.JPG" alt="Star 2">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="star 7">
+            <img class="front-face" src="img/star 7.jpg" alt="Star 7">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="star 7">
+            <img class="front-face" src="img/star 7.jpg" alt="Star 7">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="triangle 8">
+            <img class="front-face" src="img/triangle 8.jpg" alt="Triangle 8">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="triangle 8">
+            <img class="front-face" src="img/triangle 8.jpg" alt="Triangle 8">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="whot 20">
+            <img class="front-face" src="img/whot 20.JPG" alt="Whot 20">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="whot 20">
+            <img class="front-face" src="img/whot 20.JPG" alt="Whot 20">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="circle 1">
+            <img class="front-face" src="img/circle 1.JPG" alt="circle 1">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="circle 1">
+            <img class="front-face" src="img/circle 1.JPG" alt="circle 1">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="cross 5">
+            <img class="front-face" src="img/cross 5.JPG" alt="cross 5">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        <div class="memory-card" data-framework="cross 5">
+            <img class="front-face" src="img/cross 5.JPG" alt="cross 5">
+            <img class="back-face" src="img/back of whot.jpg" alt="Back of whot">
+        </div>
+        
+    </section>
+    <script src="scripts.js"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
